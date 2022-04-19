@@ -2,3 +2,134 @@ wow its magic moment
 anya golova yaichko gde ya nahozhus'
 lalalalalalalalalalalalalalalalalalalalalal
 so different and so new
+➜  poop cd lesson_1
+➜  lesson_1 git:(master) ls
+text.txt
+➜  lesson_1 git:(master) code .
+➜  lesson_1 git:(master) git pull
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint:
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 240 bytes | 20.00 KiB/s, done.
+From github.com:amirolyubov/lesson_1
+   6c22e3f..2518eb4  master     -> origin/master
+Updating 6c22e3f..2518eb4
+Fast-forward
+ text.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  lesson_1 git:(master) git pull
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint:
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 280 bytes | 35.00 KiB/s, done.
+From github.com:amirolyubov/lesson_1
+   2518eb4..b703e0b  master     -> origin/master
+Updating 2518eb4..b703e0b
+Fast-forward
+ text.txt | 1 +
+ 1 file changed, 1 insertion(+)
+➜  lesson_1 git:(master) git add .
+➜  lesson_1 git:(master) ✗ git commit -m "pik"
+[master 0097c97] pik
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+➜  lesson_1 git:(master) gp
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 338 bytes | 169.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:amirolyubov/lesson_1.git
+   b703e0b..0097c97  master -> master
+➜  lesson_1 git:(master) git pull
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint:
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+Already up to date.
+➜  lesson_1 git:(master) git push
+Everything up-to-date
+➜  lesson_1 git:(master) git pull
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+hint:
+hint:   git config pull.rebase false  # merge (the default strategy)
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 1), reused 6 (delta 1), pack-reused 0
+Unpacking objects: 100% (6/6), 536 bytes | 31.00 KiB/s, done.
+From github.com:amirolyubov/lesson_1
+   0097c97..646de72  master     -> origin/master
+Updating 0097c97..646de72
+Fast-forward
+ text.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+➜  lesson_1 git:(master) git check out -b new
+git: 'check' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+➜  lesson_1 git:(master) git checkout -b new
+Switched to a new branch 'new'
+➜  lesson_1 git:(new) git push -u origin new
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'new' on GitHub by visiting:
+remote:      https://github.com/amirolyubov/lesson_1/pull/new/new
+remote:
+To github.com:amirolyubov/lesson_1.git
+ * [new branch]      new -> new
+Branch 'new' set up to track remote branch 'new' from 'origin'.
+➜  lesson_1 git:(new) git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+➜  lesson_1 git:(master) git chekout new
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+	checkout
+➜  lesson_1 git:(master) git checkout new
+Switched to branch 'new'
+Your branch is up to date with 'origin/new'.
